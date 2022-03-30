@@ -13,12 +13,8 @@ When writing text to the character device /dev/var1 file, count the total number
 1. Enter the source program directory
 2. execute make
 3. execute insmod var1.ko
-4. View device number: 
-	cat /proc/devices | grep var1  ===> 235 var1
-5. Create a device node in the /dev directory according to the device number
-    cd /dev
-    mknod var1 c 235 0
-    ls | grep var1  ===> var1
+4. execute file a.out
+5. execute cat /proc/var1
 
 ## Инструкция пользователя
 
